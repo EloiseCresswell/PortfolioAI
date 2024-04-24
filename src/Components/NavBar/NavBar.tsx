@@ -2,7 +2,7 @@ import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
-
+import { Link } from "react-router-dom";
 import "./NavBar.css";
 import * as React from "react";
 import Divider from "@mui/material/Divider";
@@ -28,22 +28,21 @@ export default function NavBar(): JSX.Element {
           spacing={5}
           className="navBarStack"
         >
-          <a href="#">
-            <Item>Home</Item>
-          </a>
-          <a href="#">
-            <Item>Skills</Item>
-          </a>
-          <a href="#">
+         
+          <Link to="About">
+            <Item>About</Item>
+          </Link>
+          <Link to="Projects">
             <Item>Projects</Item>
-          </a>
-          <a href="#">
+          </Link>
+          <Link to="Contact">
             <Item>Contact</Item>
-          </a>
+          </Link>
+          
         </Stack>
+    
       </div>
     </React.Fragment>
   );
 }
 
-//Home, Projects, Skills, Contact Us
