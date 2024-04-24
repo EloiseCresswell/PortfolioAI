@@ -11,7 +11,7 @@ import Stack from "@mui/material/Stack";
 import { styled } from "@mui/material/styles";
 
 const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
+  backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "pink",
   ...theme.typography.body2,
   padding: theme.spacing(1),
   textAlign: "center",
@@ -21,25 +21,25 @@ const Item = styled(Paper)(({ theme }) => ({
 export default function NavBar(): JSX.Element {
   return (
     <React.Fragment>
-      {/* <ul>
-        <li>Home</li>
-        <Box></Box>
-        <li>Projects</li>
-
-        <li>Skills</li>
-
-        <li>Contact</li>
-      </ul> */}
-      <div>
+      <div className="navBarThings">
         <Stack
           direction="row"
           divider={<Divider orientation="vertical" flexItem />}
-          spacing={2}
+          spacing={5}
+          className="navBarStack"
         >
-          <Item>Home</Item>
-          <Item>Skills</Item>
-          <Item>Projects</Item>
-          <Item>Contact</Item>
+          <a href="#">
+            <Item>Home</Item>
+          </a>
+          <a href="#">
+            <Item>Skills</Item>
+          </a>
+          <a href="#">
+            <Item>Projects</Item>
+          </a>
+          <a href="#">
+            <Item>Contact</Item>
+          </a>
         </Stack>
       </div>
     </React.Fragment>
