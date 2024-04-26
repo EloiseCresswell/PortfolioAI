@@ -28,21 +28,17 @@ export default function NavBar(): JSX.Element {
           spacing={5}
           className="navBarStack"
         >
-         
           <Link to="About">
-            <Item>About</Item>
+            <Item>Our Team</Item>
           </Link>
           <Link to="Projects">
-            <Item>Projects</Item>
+            <Item>Our Learnings</Item>
           </Link>
           <Link to="Contact">
             <Item>Contact</Item>
           </Link>
-          
         </Stack>
-    
       </div>
     </React.Fragment>
   );
 }
-

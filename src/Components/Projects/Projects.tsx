@@ -11,22 +11,31 @@ import {
 } from "../ui/carousel";
 
 export default function Projects() {
+  let trial: string[] = [
+    "/eanda.png",
+    "/photos.png",
+    "may",
+    "/me.png",
+    "/vite.svg",
+  ];
   return (
     <>
-      <h1>Projects</h1>
+      <h1>Our Work</h1>
       <Carousel
         opts={{
           align: "start",
         }}
-        className="w-full max-w-sm m-14"
+        className="w-100 h-100 m-14"
       >
         <CarouselContent>
-          {Array.from({ length: 5 }).map((_, index) => (
-            <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+          {trial.map((element, index) => (
+            <CarouselItem key={index} className="md:basis-1/1 lg:basis-1/3">
               <div className="p-1">
                 <Card>
                   <CardContent className="flex aspect-square items-center justify-center p-6">
-                    <span className="text-3xl font-semibold">{index + 1}</span>
+                    <span className="text-3xl font-semibold">
+                      <img src={element} />
+                    </span>
                   </CardContent>
                 </Card>
               </div>
