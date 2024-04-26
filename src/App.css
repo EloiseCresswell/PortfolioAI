@@ -1,4 +1,6 @@
 body {
   padding-left: 50px;
   padding-top: 10px;
+  background: #ed6ea0;
+  background: linear-gradient(to right, #f7d4d4, #f6ecc4);
 }

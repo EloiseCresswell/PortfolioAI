@@ -35,7 +35,7 @@ export default function NavBar(): JSX.Element {
             <Item>Our Learnings</Item>
           </Link>
           <Link to="Contact">
-            <Item>Contact</Item>
+            <Item>Our Reflections</Item>
           </Link>
         </Stack>
       </div>
