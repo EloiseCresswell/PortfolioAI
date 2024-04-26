@@ -27,7 +27,7 @@ export default function Projects() {
       <div className="popovers">
         <Popover>
           <PopoverTrigger className="border-solid border-2 border-black hover:border-dotted p-2 m-5">
-            Our Work
+            Our Learnings
           </PopoverTrigger>
           <PopoverContent className="h-45 w-45">
             <div className="carouselDiv">
