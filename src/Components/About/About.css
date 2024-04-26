@@ -1,0 +1,15 @@
+.imageOfUs {
+  height: 700px;
+  width: 1000px;
+}
+
+.popovers {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

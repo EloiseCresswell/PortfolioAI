@@ -10,8 +10,8 @@ a {
 
 .navBarThings {
   display: flex;
-  justify-content: flex-end;
-  width: 90%;
+  justify-content: center;
+  width: 100%;
 }
 
 a div {
